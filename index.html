@@ -21,57 +21,60 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body class="font-sans">
-    <main class="bg-light-grayish-blue h-screen p-10">
+    <main class="bg-light-grayish-blue h-screen p-10 flex flex-col justify-center items-center">
       <!--
       Tarjeta
       -->
-      <div class="bg-white rounded-b-lg">
-        <div>
+      <div class="bg-white rounded-b-lg md:flex md:w-[1100px] relative">
+        <div class="w-full">
           <img
             src="./images/drawers.jpg"
             alt="Drawers"
-            class="w-full h-64 object-cover overflow-hidden rounded-t-lg"
+            class="w-full object-contain overflow-hidden rounded-t-lg"
           />
         </div>
-        <div class="p-10">
-          <h2 class="font-bold text-very-dark-grayish-blue text-xl pb-5">
-            Shift the overall look and feel by adding these wonderful touches to
-            furniture in your home
-          </h2>
-          <p class="text-desaturated-dark-blue text-[18px]">
-            Ever been in a room and felt like something was missing? Perhaps it
-            felt slightly bare and uninviting. I’ve got some simple tips to help
-            you make any room feel complete.
-          </p>
-          <div id="container-avatar" class="flex items-center justify-between mt-8">
-            <div class="flex items-center relative">
-              <img
-                src="./images/avatar-michelle.jpg"
-                alt="Michelle"
-                class="w-10 h-10 rounded-full"
-              />
-              <div class="ml-4">
-                <p class="font-semibold text-very-dark-grayish-blue">
-                  Michelle Appleton
-                </p>
-                <p class="font-light text-desaturated-dark-blue">28 Jun 2020</p>
+        <div>
+          <div class="p-10">
+            <h2 class="font-bold text-very-dark-grayish-blue text-xl md:text-3xl pb-5">
+              Shift the overall look and feel by adding these wonderful touches to
+              furniture in your home
+            </h2>
+            <p class="text-desaturated-dark-blue text-[18px]">
+              Ever been in a room and felt like something was missing? Perhaps it
+              felt slightly bare and uninviting. I’ve got some simple tips to help
+              you make any room feel complete.
+            </p>
+            <div id="container-avatar" class="flex items-center justify-between mt-8">
+              <div class="flex items-center relative">
+                <img
+                  src="./images/avatar-michelle.jpg"
+                  alt="Michelle"
+                  class="w-10 h-10 rounded-full"
+                />
+                <div class="ml-4">
+                  <p class="font-semibold text-very-dark-grayish-blue">
+                    Michelle Appleton
+                  </p>
+                  <p class="font-light text-desaturated-dark-blue">28 Jun 2020</p>
+                </div>
               </div>
-            </div>
-            <div>
-              <a id="btn-avatar"
-                ><img
-                  class="bg-light-grayish-blue h-10 rounded-full p-3"
-                  src="./images/icon-share.svg"
-                  alt="Share"
-              /></a>
+              <div>
+                <a class="cursor-pointer" id="btn-avatar"
+                  ><img
+                    class="bg-light-grayish-blue h-10 rounded-full p-3"
+                    src="./images/icon-share.svg"
+                    alt="Share"
+                /></a>
+              </div>
             </div>
           </div>
         </div>
+        
         <!--
         Contenedor de redes sociales
         -->
         <div id="container-social"
-        class="bg-very-dark-grayish-blue bottom-0 flex items-center justify-between py-2 px-10 rounded-b-lg hidden"
+        class="bg-very-dark-grayish-blue bottom-0 flex items-center justify-between py-2 px-10 rounded-b-lg md:hidden md:flex md:absolute md:-right-20 md:top-48  md:h-16 md:rounded-lg md:px-10 md:py-1"
         >
           <p class="text-grayish-blue text-base font-medium tracking-[0.4em]">SHARE</p>
           <div class="rounded-lg p-5 flex gap-5">
@@ -88,7 +91,7 @@
                 alt="Pinterest"
             /></a>
           </div>
-          <div>
+          <div class="md:hidden">
             <a class="btn-social" href=""
               ><img
                 class="bg-desaturated-dark-blue h-10 rounded-full p-3"
