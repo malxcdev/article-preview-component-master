@@ -13,3 +13,7 @@ btnAvatar.addEventListener('click', () => {
 btnAvatar.addEventListener('mouseover', () => {
     containerSocial.classList.remove('md:hidden');
 });
+
+containerAvatar.addEventListener('mouseleave', () => {
+    containerSocial.classList.add('md:hidden');
+});
